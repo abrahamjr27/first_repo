@@ -1,0 +1,19 @@
+---
+title: "First_markdown"
+author: "Abraham Assefa"
+date: "2/6/2023"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+My *First* version controlled Project in  Rstudio.
+
+Let's create a test plot.
+
+```{r}
+plot(cars)
+```
+
