@@ -2,18 +2,31 @@
 title: "First_markdown"
 author: "Abraham Assefa"
 date: "2/6/2023"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-My *First* version controlled Project in  Rstudio.
+This report documents my first attempt of using Git and Github to version control on RStudio
+project. I will be modifying this report, staging and commiting changes and then pushing to Github.
 
-Let's create a test plot.
+
+Let's create a test plot of distance (miles) and speed (mph).
 
 ```{r}
-plot(cars)
+plot(cars, col='red', xlab='Speed (mph)', ylab= 'distance (miles)')
+
+
+```
+
+A summary of the data from is given below
+
+```{r}
+library(knitr)
+kable(summary(cars))
 ```
 
